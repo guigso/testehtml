@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="BurbankBigCondensed-Bold.otf" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: Burbank;
+            src: url('BurbankBigCondensed-Bold.otf');
+        }
+
+        html {
+            background-color: cornflowerblue;
+        }
+
+        main {
+            background-color: aliceblue;
+            width: 90%;
+            margin: 0 auto;
+            box-shadow: 0px 0px 10px black;
+            min-width: 650px;
+        }
+
+        body {
+            margin: 0;padding: 0;
+        }
+
+        #menu {
+
+            margin: 0 auto;
+            background-color: #8a2be2;
+        }
+
+        #menu ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+
+        #menu ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        /* Menu horizontal principal */
+
+        #menu ul li a {
+            display: inline-block;
+            text-decoration: none;
+            font-family: Burbank;
+            font-size: 1.5em;
+            color: white;
+            background-color: #8a2be2;
+            padding: 5px 10px;
+            border: 1px solid black;
+            margin-right: -5px;
+            width: 200px;
+            text-align: center;
+        }
+
+        /* Submenu */
+
+        #menu ul li ul {
+            display: none;
+            position: absolute;
+            padding-top: 5px;
+
+        }
+
+        /* Itens do submenu */
+
+        #menu ul li ul li a {
+            width: 200px;
+            margin-top: -1px;
+            text-align: center;
+
+        }
+
+        #menu ul li ul li a:hover {
+            
+        }
+
+        /* aparecer o menu */
+
+        #menu li:hover ul {
+            
+            display: block;
+        }
+
+        /* Alterar a cor de background dos itens do menu */
+
+        #menu ul li a:hover {background-color: rgb(85, 9, 156);}
+
+        .banner {
+            font-family: Burbank;
+            text-align: center;
+            font-size: 9em;
+            width: 80%;
+            margin-top: 10px;
+            padding-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .logo {
+            float: left;
+            width: 15%;
+            height: 220px;
+        }
+
+        article {
+            margin-top: 50px;
+        }
+
+        .gamemodes {
+            width: 90%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1,
+        h3 {
+            margin-left: 15px;
+            font-family: Burbank;
+            color: white;
+            text-shadow: 0 0 5px #8a2be2, 0 0 5px #8a2be2,
+            0 0 5px #8a2be2, 0 0 5px #8a2be2,
+            0 0 5px #8a2be2, 0 0 5px #8a2be2,
+            0 0 5px #8a2be2, 0 0 5px #8a2be2;
+        }
+
+        article>p {
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 1em;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+
+        article>p:first-letter {
+            margin-left: 20px;
+            font-size: 1.5em;
+        }
+
+        footer {
+            clear: both;
+            width: 700px;
+            margin: 0 auto;
+            font-size: 0.75em;
+            text-align: center;
+            padding: 5px
+        }
+    </style>
+    <title>Fortnite HTML</title>
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="imagens/Logo.png" class="logo">
+            <!-- <img src="imagens/banner1.jpg" class="banner"> -->
+            <p class="banner">FORTNITE</p>
+        </header>
+        <nav id="menu">
+            <ul>
+                <li>
+
+                    <a href=#btr>Battle Royale</a>
+                    <ul>
+                        <li>
+                            <a href="#">Atualizações</a>
+                        </li>
+                        <li>
+                            <a href="#">Armas</a>
+                        </li>
+                        <li>
+                            <a href="#">Forum</a>
+                        </li>
+                        <li>
+                            <a href="#">Ajuda</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=#stw>Save the World</a>
+                    <ul>
+                        <li>
+                            <a href="#">Atualizações</a>
+                        </li>
+                        <li>
+                            <a href="#">Armas</a>
+                        </li>
+                        <li>
+                            <a href="#">Herois</a>
+                        </li>
+                        <li>
+                            <a href="#">Forum</a>
+                        </li>
+                        <li>
+                            <a href="#">Ajuda</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <article>
+
+            <h1>
+                <a id="btr">Battle Royale</a>
+            </h1>
+            <img src="imagens/btr.jpg" class="gamemodes">
+            <p>A TEMPORADA 4 CHEGOU / PASSE DE BATALHA 100 categorias. MAIS DE 100 recompensas. Apenas 950 V-Bucks! Quanto mais
+                você joga, mais recompensas desbloqueia.
+            </p>
+            <p> Novidades dessa Temporada: Concluir desafios após chegar à categoria 100 do Passe de Batalha concede 100 de EXP
+                de Temporada por estrela. Para mais informações sobre o Passe de Batalha da Temporada 4, visite a página
+                oficial:
+                <a href="https://www.epicgames.com/fortnite/pt-BR/battle-pass/season-4" target=_blank>clique em mim!</a>
+            </p>
+            <h1>
+                <a id="stw">Save the World</a>
+            </h1>
+            <img src="imagens/stw.png" class="gamemodes">
+
+            <h3>Evento Filmaço — Parte 1: História de Origem</h3>
+            <p>Junte-se a Cospe-fogo e Lok em sua investigação do cometa e prepare-se para recrutar uma equipe de super-heróis!></p>
+
+            <h3> Entregas de Saque</h3>
+            <p>Derrote as Carcaças, pegue os saques! Agora, inimigos eliminados têm uma chance de conceder materiais de construção,
+                componentes de criação, munição e, em alguns casos, planos.</p>
+        </article>
+        <footer>
+            <p>
+                <small>&copy Copyright 2018 - Epic Games todos os direitos reservados.</small>
+            </p>
+        </footer>
+    </main>
+</body>
+
+</html>
